@@ -11,5 +11,5 @@ const userSchem = mongoose.Schema({
 	rooms: [{ type: mongoose.Schema.Types.ObjectId, ref: "Rooms" }],
 });
 
-const UserModel = mongoose.model(UserSchema);
+const UserModel = mongoose.model("Users", UserSchema);
 export default UserModel;

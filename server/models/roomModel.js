@@ -19,6 +19,8 @@ const roomSchema = mongoose.Schema({
 		},
 	],
 
+	playlistId: {type: mongoose.Schema.Types.ObjectId, ref:"Playlist"},
+
 	createdAt: {
 		type: Date,
 		default: new Date(),
