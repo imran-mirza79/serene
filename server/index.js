@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 import bodyParser from "body-parser";
 
 import RoomRoutes from './routes/room.js';
-
+import UserRoutes from './routes/user.js';
 const app = express();
 dotenv.config();
 app.use(express.json());
@@ -26,5 +26,6 @@ mongoose
 	});
 
 app.use("/room", RoomRoutes);
+app.use("/user", UserRoutes);
 
 
