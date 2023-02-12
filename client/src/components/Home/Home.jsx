@@ -14,9 +14,10 @@ const Home = () => {
 	const handleCreateRoom = (e) => {
 		e.preventDefault();
 
-		createRoom(fakeRoomData, navigate).then((res) => {
-			console.log(res);
-		});
+		// createRoom(fakeRoomData, navigate).then((res) => {
+		// 	console.log(res);
+		// });
+		navigate("/room/63e3c1b5b26b07862168f8b6");
 	};
 	return (
 		<div>

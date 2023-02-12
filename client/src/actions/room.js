@@ -8,6 +8,6 @@ export const createRoom = async (roomDetails, navigate) => {
         navigate(`/room/${data._id}`);
         return data;
     } catch (error) {
-        
+        console.log(error);
     }
 }
